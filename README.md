@@ -34,7 +34,7 @@ Returns metadata about the API, including:
 ## Setup and Deployment
 
 ### Prerequisites
-- Node.js (v14 or higher)
+- Node.js (v18 or higher)
 - npm
 
 ### Installation
