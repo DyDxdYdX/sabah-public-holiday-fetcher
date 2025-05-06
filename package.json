@@ -1,0 +1,22 @@
+{
+  "name": "sabah-public-holidays-api",
+  "version": "1.0.0",
+  "description": "A simple API that provides public holiday data for Malaysia (Sabah) in JSON format",
+  "main": "generate_api.js",
+  "scripts": {
+    "generate": "node generate_api.js"
+  },
+  "keywords": [
+    "Sabah",
+    "Malaysia",
+    "public-holidays",
+    "api",
+    "json"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}

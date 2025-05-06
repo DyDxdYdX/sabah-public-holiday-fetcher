@@ -1,0 +1,90 @@
+[
+  {
+    "date": "Jan 01",
+    "holiday_name": "New Year's Day"
+  },
+  {
+    "date": "Feb 17",
+    "holiday_name": "Chinese New Year"
+  },
+  {
+    "date": "Feb 18",
+    "holiday_name": "Chinese New Year"
+  },
+  {
+    "date": "Mar 20",
+    "holiday_name": "Hari Raya Aidilfitri"
+  },
+  {
+    "date": "Mar 21",
+    "holiday_name": "Hari Raya Aidilfitri Holiday"
+  },
+  {
+    "date": "Apr 03",
+    "holiday_name": "Good Friday"
+  },
+  {
+    "date": "May 01",
+    "holiday_name": "Labour Day"
+  },
+  {
+    "date": "May 10",
+    "holiday_name": "Mother's Day"
+  },
+  {
+    "date": "May 27",
+    "holiday_name": "Hari Raya Haji"
+  },
+  {
+    "date": "May 30",
+    "holiday_name": "Pesta Kaamatan"
+  },
+  {
+    "date": "May 31",
+    "holiday_name": "Wesak Day"
+  },
+  {
+    "date": "May 31",
+    "holiday_name": "Pesta Kaamatan"
+  },
+  {
+    "date": "Jun 01",
+    "holiday_name": "Birthday of SPB Yang di Pertuan Agong"
+  },
+  {
+    "date": "Jun 16",
+    "holiday_name": "Awal Muharram"
+  },
+  {
+    "date": "Jun 21",
+    "holiday_name": "Father's Day"
+  },
+  {
+    "date": "Aug 25",
+    "holiday_name": "Maulidur Rasul"
+  },
+  {
+    "date": "Aug 31",
+    "holiday_name": "National Day"
+  },
+  {
+    "date": "Sep 16",
+    "holiday_name": "Malaysia Day"
+  },
+  {
+    "date": "Oct 03",
+    "holiday_name": "Birthday of the Governor of Sabah"
+  },
+  {
+    "date": "Nov 08",
+    "holiday_name": "Deepavali"
+  },
+  {
+    "date": "Dec 24",
+    "holiday_name": "Christmas Eve"
+  },
+  {
+    "date": "Dec 25",
+    "holiday_name": "Christmas Day"
+  }
+]

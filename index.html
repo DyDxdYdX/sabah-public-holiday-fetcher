@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysia Public Holidays API</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        }
+        .endpoint {
+            background-color: #e9f5ff;
+            padding: 10px 15px;
+            border-left: 4px solid #0366d6;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Malaysia Public Holidays API</h1>
+    
+    <p>This API provides public holiday data for Malaysia (Sabah). All data is available in JSON format.</p>
+    
+    <h2>API Endpoints</h2>
+    
+    <div class="endpoint">
+        <h3>Get Available Years</h3>
+        <p><code>GET /api/years.json</code></p>
+        <p>Returns an array of years for which holiday data is available.</p>
+        <p>Example response:</p>
+        <pre><code>[2023, 2024, 2025, 2026, 2027]</code></pre>
+    </div>
+    
+    <div class="endpoint">
+        <h3>Get Holidays for a Specific Year</h3>
+        <p><code>GET /api/{year}.json</code></p>
+        <p>Returns an array of holidays for the specified year.</p>
+        <p>Example request: <code>/api/2025.json</code></p>
+        <p>Example response:</p>
+        <pre><code>[
+  {
+    "date": "Jan 01",
+    "holiday_name": "New Year's Day"
+  },
+  {
+    "date": "Jan 29",
+    "holiday_name": "Chinese New Year"
+  },
+  ...
+]</code></pre>
+    </div>
+    
+    <h2>Usage Examples</h2>
+    
+    <h3>JavaScript (Fetch API)</h3>
+    <pre><code>// Get holidays for 2025
+fetch('https://yourusername.github.io/repo-name/api/2025.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => console.error('Error:', error));</code></pre>
+    
+    <h3>Python (Requests)</h3>
+    <pre><code>import requests
+
+# Get holidays for 2025
+response = requests.get('https://yourusername.github.io/repo-name/api/2025.json')
+holidays = response.json()
+print(holidays)</code></pre>
+    
+    <h2>Data Source</h2>
+    <p>Holiday data is scraped from <a href="https://www.officeholidays.com/countries/malaysia/sabah" target="_blank">Office Holidays</a>.</p>
+    
+    <h2>GitHub Repository</h2>
+    <p>The source code for this API is available on <a href="https://github.com/yourusername/repo-name" target="_blank">GitHub</a>.</p>
+    
+    <footer>
+        <p>Last updated: <span id="last-updated"></span></p>
+        <script>
+            document.getElementById('last-updated').textContent = new Date().toISOString().split('T')[0];
+        </script>
+    </footer>
+</body>
+</html>
