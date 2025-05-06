@@ -1,0 +1,64 @@
+name: Generate API Data
+
+on:
+  schedule:
+    # Run once a month on the 1st at 00:00 UTC
+    - cron: '0 0 1 * *'
+    # You can add more schedules if needed, e.g., weekly on Sunday
+    # - cron: '0 0 * * 0'  # Weekly on Sunday at midnight UTC
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate API data
+        run: npm run generate
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add api/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update API data [skip ci]" && git push)
+
+      - name: Check for API generation issues
+        id: check_api
+        run: |
+          if [ ! -f api/years.json ]; then
+            echo "API generation failed - years.json not found"
+            exit 1
+          fi
+          YEAR_COUNT=$(cat api/years.json | jq length)
+          if [ "$YEAR_COUNT" -lt 1 ]; then
+            echo "API generation issue - no years found in years.json"
+            exit 1
+          fi
+          echo "API generation successful - $YEAR_COUNT years found"
+
+      - name: Send notification on failure
+        if: failure()
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'API Generation Failed',
+              body: `The scheduled API generation failed on ${new Date().toISOString()}.
+
+              Please check the [workflow run](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) for details.`
+            })
