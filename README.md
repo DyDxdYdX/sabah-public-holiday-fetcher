@@ -54,7 +54,7 @@ To change the years for which data is generated, modify the `startYear` and `end
 ### JavaScript (Fetch API)
 ```javascript
 // Get holidays for 2025
-fetch('https://yourusername.github.io/sabah-public-holiday-fetcher/api/2025.json')
+fetch('https://dydxdydx.github.io/sabah-public-holiday-fetcher/api/2025.json')
   .then(response => response.json())
   .then(data => {
     console.log(data);
@@ -66,7 +66,7 @@ fetch('https://yourusername.github.io/sabah-public-holiday-fetcher/api/2025.json
 ```php
 <?php
 // Get holidays for 2025
-$response = file_get_contents('https://yourusername.github.io/sabah-public-holiday-fetcher/api/2025.json');
+$response = file_get_contents('https://dydxdydx.github.io/sabah-public-holiday-fetcher/api/2025.json');
 $holidays = json_decode($response, true);
 print_r($holidays);
 ?>
