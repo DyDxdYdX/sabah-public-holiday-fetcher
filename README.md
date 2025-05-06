@@ -1,5 +1,7 @@
 # Malaysia Public Holidays API
 
+[![Generate API Data](https://github.com/DyDxdYdX/sabah-public-holiday-fetcher/actions/workflows/generate.yml/badge.svg)](https://github.com/DyDxdYdX/sabah-public-holiday-fetcher/actions/workflows/generate.yml)
+
 Visit Site: https://dydxdydx.github.io/sabah-public-holiday-fetcher/
 
 A simple API that provides public holiday data for Malaysia (Sabah) in JSON format.
@@ -17,6 +19,17 @@ Returns an array of years for which holiday data is available.
 GET /api/{year}.json
 ```
 Returns an array of holidays for the specified year.
+
+### Get API Metadata
+```
+GET /api/metadata.json
+```
+Returns metadata about the API, including:
+- `last_updated`: Timestamp when the data was last updated
+- `available_years`: List of years for which data is available
+- `failed_years`: List of years for which data scraping failed
+- `total_years_available`: Total number of years available
+- `year_range`: Range of years available (e.g., "2023-2026")
 
 ## Setup and Deployment
 
@@ -38,8 +51,11 @@ npm run generate
 ```
 This will:
 - Create an `api` directory
-- Generate JSON files for each year (2023-2027 by default)
+- Generate JSON files for each year (automatically calculated based on the current year)
 - Create a `years.json` file listing all available years
+- Create a `metadata.json` file with API information
+
+The data is automatically updated monthly via GitHub Actions, but you can also trigger the workflow manually from the Actions tab in your GitHub repository.
 
 ### Deploy to GitHub Pages
 1. Push the repository to GitHub
@@ -49,7 +65,17 @@ This will:
 
 ## Customization
 
-To change the years for which data is generated, modify the `startYear` and `endYear` variables in `generate_api.js`.
+By default, the API generates data for a range of years from 2 years in the past to 5 years in the future. This is automatically calculated based on the current year.
+
+If you want to customize this behavior, you can modify the following variables in `generate_api.js`:
+
+```javascript
+const currentYear = new Date().getFullYear();
+const startYear = currentYear - 2; // 2 years in the past
+const endYear = currentYear + 5;   // 5 years in the future
+```
+
+The script also includes retry logic with exponential backoff to handle temporary failures when scraping data.
 
 ## Usage Examples
 
