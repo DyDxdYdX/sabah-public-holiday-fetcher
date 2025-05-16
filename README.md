@@ -61,7 +61,7 @@ The data is automatically updated monthly via GitHub Actions, but you can also t
 1. Push the repository to GitHub
 2. Go to Settings > Pages
 3. Select the main branch as the source
-4. Your API will be available at `https://[your-username].github.io/[repository-name]/api/`
+4. Your API will be available at `https://[your-username].github.io/[repository-name]/api/` or your own custom domain.
 
 ## Customization
 
@@ -82,7 +82,7 @@ The script also includes retry logic with exponential backoff to handle temporar
 ### JavaScript (Fetch API)
 ```javascript
 // Get holidays for 2025
-fetch('https://dydxdydx.github.io/sabah-public-holiday-fetcher/api/2025.json')
+fetch('https://sabah-holiday.dydxsoft.my/api/2025.json')
   .then(response => response.json())
   .then(data => {
     console.log(data);
@@ -94,7 +94,7 @@ fetch('https://dydxdydx.github.io/sabah-public-holiday-fetcher/api/2025.json')
 ```php
 <?php
 // Get holidays for 2025
-$response = file_get_contents('https://dydxdydx.github.io/sabah-public-holiday-fetcher/api/2025.json');
+$response = file_get_contents('https://sabah-holiday.dydxsoft.my/api/2025.json');
 $holidays = json_decode($response, true);
 print_r($holidays);
 ?>
