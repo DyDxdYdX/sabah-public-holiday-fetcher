@@ -2,7 +2,7 @@
 
 [![Generate API Data](https://github.com/DyDxdYdX/sabah-public-holiday-fetcher/actions/workflows/generate.yml/badge.svg)](https://github.com/DyDxdYdX/sabah-public-holiday-fetcher/actions/workflows/generate.yml)
 
-Visit Site: https://dydxdydx.github.io/sabah-public-holiday-fetcher/
+Visit Site: [Sabah Holiday API](https://sabah-holiday.dydxsoft.my/)
 
 A simple API that provides public holiday data for Malaysia (Sabah) in JSON format.
 
