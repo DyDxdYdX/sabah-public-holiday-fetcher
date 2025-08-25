@@ -1,0 +1,14 @@
+{
+  "last_updated": "2025-08-25T01:10:32.648Z",
+  "available_years": [
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "failed_years": [
+    2027
+  ],
+  "total_years_available": 4,
+  "year_range": "2023-2026"
+}
