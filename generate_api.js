@@ -12,7 +12,7 @@ if (!fs.existsSync(apiDir)) {
 // Years to pre-generate (adjust as needed)
 const currentYear = new Date().getFullYear();
 const startYear = currentYear - 2; // 2 years in the past
-const endYear = currentYear + 5;   // 5 years in the future
+const endYear = currentYear + 2;   // 2 years in the future
 
 async function scrapeHolidays(year) {
   console.log(`Scraping holidays for ${year}...`);

@@ -72,8 +72,16 @@
     "holiday_name": "National Day"
   },
   {
+    "date": "Sep 01",
+    "holiday_name": "National Day (in lieu)"
+  },
+  {
     "date": "Sep 05",
     "holiday_name": "Maulidur Rasul"
+  },
+  {
+    "date": "Sep 15",
+    "holiday_name": "Malaysia Day Holiday"
   },
   {
     "date": "Sep 16",
