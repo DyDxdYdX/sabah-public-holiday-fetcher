@@ -6,63 +6,208 @@
     <meta name="description" content="A simple API that provides public holiday data for Malaysia (Sabah) in JSON format. Updated monthly via GitHub Actions.">
     <title>Malaysia Public Holidays API</title>
     <style>
+        :root {
+            --primary-color: #007bff; /* A nice blue */
+            --secondary-color: #6c757d; /* Muted grey */
+            --light-bg: #f8f9fa; /* Very light grey for backgrounds */
+            --dark-text: #212529; /* Darker text for better contrast */
+            --light-text: #f8f9fa; /* Light text for dark backgrounds */
+            --border-color: #dee2e6; /* Light border color */
+            --card-bg: #ffffff; /* White for cards */
+            --code-bg: #282c34; /* Dark background for code blocks */
+            --code-text: #abb2bf; /* Light grey text for code */
+            --success-color: #28a745; /* Green for success/badges */
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
+            line-height: 1.7;
+            color: var(--dark-text);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
         }
-        pre {
-            background-color: #f5f5f5;
-            padding: 15px;
-            border-radius: 5px;
-            overflow-x: auto;
+
+        header.api-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 30px;
         }
-        code {
-            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+
+        header.api-header h1 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 2.5em;
         }
-        .endpoint {
-            background-color: #e9f5ff;
-            padding: 10px 15px;
-            border-left: 4px solid #0366d6;
-            margin-bottom: 20px;
+
+        header.api-header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
+
+        .github-badge-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .github-badge-container img {
+            max-width: 250px; /* Adjust as needed */
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
         h2 {
-            margin-top: 30px;
+            font-size: 1.8em;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 25px;
         }
+
+        h3 {
+            font-size: 1.4em;
+            color: var(--dark-text);
+            margin-top: 0;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .endpoint-path {
+            display: inline-block;
+            background-color: #e9ecef;
+            color: var(--dark-text);
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 0.95em;
+            margin-bottom: 10px;
+        }
+
+        .endpoint-path strong {
+            color: var(--primary-color);
+        }
+
+        pre {
+            background-color: var(--code-bg);
+            color: var(--code-text);
+            padding: 20px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        code { /* For inline code */
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            background-color: #e9ecef;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+
+        pre code { /* Reset for code inside pre */
+            background-color: transparent;
+            padding: 0;
+            border-radius: 0;
+            color: inherit; /* Inherit from pre */
+        }
+
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: #0056b3; /* Darker shade of primary */
+            text-decoration: underline;
+        }
+
+        footer.api-footer {
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 40px;
+            background-color: #343a40; /* Dark footer */
+            color: var(--light-text);
+            font-size: 0.9em;
+        }
+
+        footer.api-footer p {
+            margin: 0;
+        }
+        footer.api-footer a {
+            color: #9dbff9; /* Lighter blue for dark background */
+        }
+        footer.api-footer a:hover {
+            color: #c2d8ff;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Malaysia Public Holidays API</h1>
+    <header class="api-header">
+        <h1>Malaysia Public Holidays API</h1>
+        <p>A simple, free API providing public holiday data for Sabah, Malaysia in JSON format. Updated automatically via GitHub Actions.</p>
+    </header>
 
-    <div style="margin-bottom: 20px;">
-        <a href="https://github.com/DyDxdYdX/sabah-public-holiday-fetcher/actions/workflows/generate.yml">
-            <img src="https://github.com/DyDxdYdX/sabah-public-holiday-fetcher/actions/workflows/generate.yml/badge.svg"
-                 alt="Generate API Data" style="max-width: 100%;">
-        </a>
-    </div>
+    <div class="container">
+        <div class="github-badge-container">
+            <a href="https://github.com/DyDxdYdX/sabah-public-holiday-fetcher/actions/workflows/generate.yml" target="_blank" rel="noopener noreferrer">
+                <img src="https://github.com/DyDxdYdX/sabah-public-holiday-fetcher/actions/workflows/generate.yml/badge.svg"
+                     alt="Generate API Data Status" style="max-width: 100%;">
+            </a>
+        </div>
 
-    <p>A simple API that provides public holiday data for Malaysia (Sabah) in JSON format.</p>
+        <h2>API Endpoints</h2>
 
-    <h2>API Endpoints</h2>
+        <div class="card">
+            <h3>Get Available Years</h3>
+            <p><code class="endpoint-path"><strong>GET</strong> /api/years.json</code></p>
+            <p>Returns an array of years for which holiday data is available.</p>
+            <p>Example response:</p>
+            <pre><code>[2023, 2024, 2025, 2026]</code></pre>
+        </div>
 
-    <div class="endpoint">
-        <h3>Get Available Years</h3>
-        <p><code>GET /api/years.json</code></p>
-        <p>Returns an array of years for which holiday data is available.</p>
-        <p>Example response:</p>
-        <pre><code>[2023, 2024, 2025, 2026]</code></pre>
-    </div>
-
-    <div class="endpoint">
-        <h3>Get Holidays for a Specific Year</h3>
-        <p><code>GET /api/{year}.json</code></p>
-        <p>Returns an array of holidays for the specified year.</p>
-        <p>Example request: <code>/api/2025.json</code></p>
-        <p>Example response:</p>
-        <pre><code>[
+        <div class="card">
+            <h3>Get Holidays for a Specific Year</h3>
+            <p><code class="endpoint-path"><strong>GET</strong> /api/{year}.json</code></p>
+            <p>Returns an array of holidays for the specified year.</p>
+            <p>Example request: <code>/api/2025.json</code></p>
+            <p>Example response:</p>
+            <pre><code>[
   {
     "date": "Jan 01",
     "holiday_name": "New Year's Day"
@@ -73,72 +218,89 @@
   },
   ...
 ]</code></pre>
-    </div>
+        </div>
 
-    <div class="endpoint">
-        <h3>Get API Metadata</h3>
-        <p><code>GET /api/metadata.json</code></p>
-        <p>Returns metadata about the API, including:</p>
-        <ul>
-            <li><code>last_updated</code>: Timestamp when the data was last updated</li>
-            <li><code>available_years</code>: List of years for which data is available</li>
-            <li><code>failed_years</code>: List of years for which data scraping failed</li>
-            <li><code>total_years_available</code>: Total number of years available</li>
-            <li><code>year_range</code>: Range of years available (e.g., "2023-2026")</li>
-        </ul>
-        <p>Example response:</p>
-        <pre><code>{
+        <div class="card">
+            <h3>Get API Metadata</h3>
+            <p><code class="endpoint-path"><strong>GET</strong> /api/metadata.json</code></p>
+            <p>Returns metadata about the API, including:</p>
+            <ul>
+                <li><code>last_updated</code>: Timestamp when the data was last updated</li>
+                <li><code>available_years</code>: List of years for which data is available</li>
+                <li><code>failed_years</code>: List of years for which data scraping failed</li>
+                <li><code>total_years_available</code>: Total number of years available</li>
+                <li><code>year_range</code>: Range of years available (e.g., "2023-2026")</li>
+            </ul>
+            <p>Example response:</p>
+            <pre><code>{
   "last_updated": "2025-06-05T15:44:00.000Z",
   "available_years": [2023, 2024, 2025, 2026],
   "failed_years": [2027],
   "total_years_available": 4,
   "year_range": "2023-2026"
 }</code></pre>
-    </div>
+        </div>
 
-    <h2>Usage Examples</h2>
+        <h2>Usage Examples</h2>
 
-    <h3>JavaScript (Fetch API)</h3>
-    <pre><code>// Get holidays for 2025
-fetch('https://dydxdydx.github.io/sabah-public-holiday-fetcher/api/2025.json')
+        <div class="card">
+            <h3>JavaScript (Fetch API)</h3>
+            <pre><code>// Get holidays for 2025
+fetch('https://sabah-holiday.dydxsoft.my/api/2025.json')
   .then(response => response.json())
   .then(data => {
     console.log(data);
   })
   .catch(error => console.error('Error:', error));</code></pre>
+        </div>
 
-    <h3>Python (Requests)</h3>
-    <pre><code>import requests
+        <div class="card">
+            <h3>Python (Requests)</h3>
+            <pre><code>import requests
 
 # Get holidays for 2025
-response = requests.get('https://dydxdydx.github.io/sabah-public-holiday-fetcher/api/2025.json')
+response = requests.get('https://sabah-holiday.dydxsoft.my/api/2025.json')
 holidays = response.json()
 print(holidays)</code></pre>
+        </div>
 
-    <h2>Data Source</h2>
-    <p>Holiday data is scraped from <a href="https://www.officeholidays.com/countries/malaysia/sabah" target="_blank">Office Holidays</a>.</p>
+        <h2>Data Source</h2>
+        <p>Holiday data is scraped from <a href="https://www.officeholidays.com/countries/malaysia/sabah" target="_blank" rel="noopener noreferrer">Office Holidays</a>.</p>
 
-    <h2>Automation</h2>
-    <p>The API data is automatically updated on the 1st of each month via GitHub Actions. The script includes retry logic with exponential backoff to handle temporary failures when scraping data.</p>
+        <h2>Automation</h2>
+        <p>The API data is automatically updated on the 1st of each year (Jan 01) via GitHub Actions. The script includes retry logic with exponential backoff to handle temporary failures when scraping data.</p>
 
-    <h2>Customization</h2>
-    <p>By default, the API generates data for a range of years from 2 years in the past to 5 years in the future. This is automatically calculated based on the current year.</p>
+        <h2>Customization</h2>
+        <p>By default, the API generates data for a range of years from 2 years in the past to 5 years in the future. This is automatically calculated based on the current year.</p>
 
-    <h2>GitHub Repository</h2>
-    <p>The source code for this API is available on <a href="https://github.com/DyDxdYdX/sabah-public-holiday-fetcher" target="_blank">GitHub</a>.</p>
+        <h2>GitHub Repository</h2>
+        <p>The source code for this API is available on <a href="https://github.com/DyDxdYdX/sabah-public-holiday-fetcher" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
 
-    <footer>
-        <p>Last updated: <span id="last-updated"></span></p>
+    </div>
+
+    <footer class="api-footer">
+        <p>Last updated: <span id="last-updated">Loading...</span> | Developed by <a href="https://github.com/DyDxdYdX" target="_blank" rel="noopener noreferrer">DyDxdYdX</a></p>
         <script>
             fetch('api/metadata.json')
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.json();
+                })
                 .then(data => {
-                    const lastUpdated = new Date(data.last_updated);
-                    document.getElementById('last-updated').textContent = lastUpdated.toISOString().split('T')[0];
+                    if (data && data.last_updated) {
+                        const lastUpdated = new Date(data.last_updated);
+                        document.getElementById('last-updated').textContent = lastUpdated.toISOString().split('T')[0];
+                    } else {
+                        document.getElementById('last-updated').textContent = 'N/A';
+                    }
                 })
                 .catch(error => {
                     console.error('Error fetching metadata:', error);
-                    document.getElementById('last-updated').textContent = new Date().toISOString().split('T')[0];
+                    // Display current date as fallback for "last updated" if metadata fails
+                    // Or a more specific error message
+                    document.getElementById('last-updated').textContent = new Date().toISOString().split('T')[0] + ' (fallback)';
                 });
         </script>
     </footer>

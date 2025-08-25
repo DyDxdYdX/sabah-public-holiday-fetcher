@@ -41,20 +41,23 @@ async function scrapeHolidays(year) {
       const holidays = [];
 
       holidayTable.find('tr').each((_, row) => {
-        const cells = $(row).find('td');
-
-        if (cells.length >= 3) {
+      const cells = $(row).find('td');
+    
+      if (cells.length >= 4) {
+          const type = $(cells[3]).text().trim().toLowerCase(); // 'national holiday', 'regional holiday', etc.
           const date = $(cells[1]).text().trim();
           const holidayName = $(cells[2]).text().trim();
-
-          if (date && holidayName) {
+      
+          // Only include National Holiday and Regional Holiday
+          if ((type === 'national holiday' || type === 'regional holiday') && date && holidayName) {
             holidays.push({
               date,
-              holiday_name: holidayName
+              holiday_name: holidayName,
             });
           }
         }
       });
+
 
       if (holidays.length === 0) {
         throw new Error(`No holidays found for year ${year}`);
