@@ -9,14 +9,18 @@
   },
   {
     "date": "Feb 18",
-    "holiday_name": "Chinese New Year"
-  },
-  {
-    "date": "Mar 20",
-    "holiday_name": "Hari Raya Aidilfitri"
+    "holiday_name": "Chinese New Year Holiday"
   },
   {
     "date": "Mar 21",
+    "holiday_name": "Hari Raya Aidilfitri"
+  },
+  {
+    "date": "Mar 22",
+    "holiday_name": "Hari Raya Aidilfitri Holiday"
+  },
+  {
+    "date": "Mar 23",
     "holiday_name": "Hari Raya Aidilfitri Holiday"
   },
   {
@@ -36,19 +40,23 @@
     "holiday_name": "Pesta Kaamatan"
   },
   {
-    "date": "May 31",
-    "holiday_name": "Wesak Day"
+    "date": "May 30",
+    "holiday_name": "Birthday of the Governor of Sabah"
   },
   {
     "date": "May 31",
     "holiday_name": "Pesta Kaamatan"
   },
   {
+    "date": "May 31",
+    "holiday_name": "Wesak Day"
+  },
+  {
     "date": "Jun 01",
     "holiday_name": "Birthday of SPB Yang di Pertuan Agong"
   },
   {
-    "date": "Jun 16",
+    "date": "Jun 17",
     "holiday_name": "Awal Muharram"
   },
   {
@@ -64,12 +72,12 @@
     "holiday_name": "Malaysia Day"
   },
   {
-    "date": "Oct 03",
-    "holiday_name": "Birthday of the Governor of Sabah"
-  },
-  {
     "date": "Nov 08",
     "holiday_name": "Deepavali"
+  },
+  {
+    "date": "Nov 09",
+    "holiday_name": "Deepavali (in lieu)"
   },
   {
     "date": "Dec 24",
