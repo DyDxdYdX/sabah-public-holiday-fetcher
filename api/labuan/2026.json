@@ -4,12 +4,24 @@
     "holiday_name": "New Year's Day"
   },
   {
+    "date": "Feb 02",
+    "holiday_name": "Federal Territory Day"
+  },
+  {
+    "date": "Feb 03",
+    "holiday_name": "Thaipusam (in lieu)"
+  },
+  {
     "date": "Feb 17",
     "holiday_name": "Chinese New Year"
   },
   {
     "date": "Feb 18",
     "holiday_name": "Chinese New Year Holiday"
+  },
+  {
+    "date": "Mar 07",
+    "holiday_name": "Nuzul Al-Quran Day"
   },
   {
     "date": "Mar 21",
@@ -24,10 +36,6 @@
     "holiday_name": "Hari Raya Aidilfitri Holiday"
   },
   {
-    "date": "Apr 03",
-    "holiday_name": "Good Friday"
-  },
-  {
     "date": "May 01",
     "holiday_name": "Labour Day"
   },
@@ -38,10 +46,6 @@
   {
     "date": "May 30",
     "holiday_name": "Pesta Kaamatan"
-  },
-  {
-    "date": "May 30",
-    "holiday_name": "Birthday of the Governor of Sabah"
   },
   {
     "date": "May 31",
@@ -78,10 +82,6 @@
   {
     "date": "Nov 09",
     "holiday_name": "Deepavali (in lieu)"
-  },
-  {
-    "date": "Dec 24",
-    "holiday_name": "Christmas Eve"
   },
   {
     "date": "Dec 25",

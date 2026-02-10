@@ -4,31 +4,23 @@
     "holiday_name": "New Year's Day"
   },
   {
-    "date": "Jan 29",
+    "date": "Feb 06",
     "holiday_name": "Chinese New Year"
   },
   {
-    "date": "Jan 30",
+    "date": "Feb 07",
     "holiday_name": "Chinese New Year"
   },
   {
-    "date": "Mar 30",
-    "holiday_name": "Birthday of the Governor of Sabah"
-  },
-  {
-    "date": "Mar 31",
+    "date": "Mar 09",
     "holiday_name": "Hari Raya Aidilfitri"
   },
   {
-    "date": "Apr 01",
+    "date": "Mar 10",
     "holiday_name": "Hari Raya Aidilfitri Holiday"
   },
   {
-    "date": "Apr 02",
-    "holiday_name": "Birthday of the Governor of Sabah (in lieu)"
-  },
-  {
-    "date": "Apr 18",
+    "date": "Mar 26",
     "holiday_name": "Good Friday"
   },
   {
@@ -36,8 +28,16 @@
     "holiday_name": "Labour Day"
   },
   {
-    "date": "May 12",
+    "date": "May 16",
+    "holiday_name": "Hari Raya Haji"
+  },
+  {
+    "date": "May 20",
     "holiday_name": "Wesak Day"
+  },
+  {
+    "date": "May 29",
+    "holiday_name": "Birthday of the Governor of Sabah"
   },
   {
     "date": "May 30",
@@ -48,44 +48,28 @@
     "holiday_name": "Pesta Kaamatan"
   },
   {
-    "date": "Jun 02",
-    "holiday_name": "Birthday of SPB Yang di Pertuan Agong"
+    "date": "Jun 06",
+    "holiday_name": "Awal Muharram"
   },
   {
     "date": "Jun 07",
-    "holiday_name": "Hari Raya Haji"
+    "holiday_name": "Birthday of SPB Yang di Pertuan Agong"
   },
   {
-    "date": "Jun 27",
-    "holiday_name": "Awal Muharram"
+    "date": "Aug 15",
+    "holiday_name": "Maulidur Rasul"
   },
   {
     "date": "Aug 31",
     "holiday_name": "National Day"
   },
   {
-    "date": "Sep 01",
-    "holiday_name": "National Day (in lieu)"
-  },
-  {
-    "date": "Sep 05",
-    "holiday_name": "Maulidur Rasul"
-  },
-  {
-    "date": "Sep 15",
-    "holiday_name": "Malaysia Day Holiday"
-  },
-  {
     "date": "Sep 16",
     "holiday_name": "Malaysia Day"
   },
   {
-    "date": "Oct 20",
+    "date": "Oct 29",
     "holiday_name": "Deepavali"
-  },
-  {
-    "date": "Nov 29",
-    "holiday_name": "Polling Day"
   },
   {
     "date": "Dec 24",

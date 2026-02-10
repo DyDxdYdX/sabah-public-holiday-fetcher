@@ -12,20 +12,12 @@
     "holiday_name": "Chinese New Year"
   },
   {
-    "date": "Mar 30",
-    "holiday_name": "Birthday of the Governor of Sabah"
-  },
-  {
     "date": "Mar 31",
     "holiday_name": "Hari Raya Aidilfitri"
   },
   {
     "date": "Apr 01",
     "holiday_name": "Hari Raya Aidilfitri Holiday"
-  },
-  {
-    "date": "Apr 02",
-    "holiday_name": "Birthday of the Governor of Sabah (in lieu)"
   },
   {
     "date": "Apr 18",
@@ -40,16 +32,20 @@
     "holiday_name": "Wesak Day"
   },
   {
-    "date": "May 30",
-    "holiday_name": "Pesta Kaamatan"
+    "date": "Jun 01",
+    "holiday_name": "Gawai Dayak"
   },
   {
-    "date": "May 31",
-    "holiday_name": "Pesta Kaamatan"
+    "date": "Jun 02",
+    "holiday_name": "Gawai Dayak"
   },
   {
     "date": "Jun 02",
     "holiday_name": "Birthday of SPB Yang di Pertuan Agong"
+  },
+  {
+    "date": "Jun 03",
+    "holiday_name": "Gawai Dayak Holiday"
   },
   {
     "date": "Jun 07",
@@ -58,6 +54,10 @@
   {
     "date": "Jun 27",
     "holiday_name": "Awal Muharram"
+  },
+  {
+    "date": "Jul 22",
+    "holiday_name": "Sarawak Day"
   },
   {
     "date": "Aug 31",
@@ -80,16 +80,8 @@
     "holiday_name": "Malaysia Day"
   },
   {
-    "date": "Oct 20",
-    "holiday_name": "Deepavali"
-  },
-  {
-    "date": "Nov 29",
-    "holiday_name": "Polling Day"
-  },
-  {
-    "date": "Dec 24",
-    "holiday_name": "Christmas Eve"
+    "date": "Oct 11",
+    "holiday_name": "Birthday of the Governor of Sarawak"
   },
   {
     "date": "Dec 25",

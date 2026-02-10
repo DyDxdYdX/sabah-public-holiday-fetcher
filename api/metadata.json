@@ -1,14 +1,201 @@
 {
-  "last_updated": "2026-01-01T01:57:41.189Z",
-  "available_years": [
-    2024,
-    2025,
-    2026
+  "last_updated": "2026-02-10T08:04:32.286Z",
+  "state_count": 16,
+  "default_state": "sabah",
+  "states": [
+    {
+      "code": "johor",
+      "name": "Johor"
+    },
+    {
+      "code": "kedah",
+      "name": "Kedah"
+    },
+    {
+      "code": "kelantan",
+      "name": "Kelantan"
+    },
+    {
+      "code": "kuala-lumpur",
+      "name": "Kuala Lumpur"
+    },
+    {
+      "code": "labuan",
+      "name": "Labuan"
+    },
+    {
+      "code": "melaka",
+      "name": "Melaka"
+    },
+    {
+      "code": "negeri-sembilan",
+      "name": "Negeri Sembilan"
+    },
+    {
+      "code": "pahang",
+      "name": "Pahang"
+    },
+    {
+      "code": "penang",
+      "name": "Penang"
+    },
+    {
+      "code": "perak",
+      "name": "Perak"
+    },
+    {
+      "code": "perlis",
+      "name": "Perlis"
+    },
+    {
+      "code": "putrajaya",
+      "name": "Putrajaya"
+    },
+    {
+      "code": "sabah",
+      "name": "Sabah"
+    },
+    {
+      "code": "sarawak",
+      "name": "Sarawak"
+    },
+    {
+      "code": "selangor",
+      "name": "Selangor"
+    },
+    {
+      "code": "terengganu",
+      "name": "Terengganu"
+    }
   ],
-  "failed_years": [
-    2027,
-    2028
-  ],
-  "total_years_available": 3,
-  "year_range": "2024-2026"
+  "states_metadata": {
+    "johor": {
+      "code": "johor",
+      "name": "Johor",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    },
+    "kedah": {
+      "code": "kedah",
+      "name": "Kedah",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    },
+    "kelantan": {
+      "code": "kelantan",
+      "name": "Kelantan",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    },
+    "kuala-lumpur": {
+      "code": "kuala-lumpur",
+      "name": "Kuala Lumpur",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    },
+    "labuan": {
+      "code": "labuan",
+      "name": "Labuan",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    },
+    "melaka": {
+      "code": "melaka",
+      "name": "Melaka",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    },
+    "negeri-sembilan": {
+      "code": "negeri-sembilan",
+      "name": "Negeri Sembilan",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    },
+    "pahang": {
+      "code": "pahang",
+      "name": "Pahang",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    },
+    "penang": {
+      "code": "penang",
+      "name": "Penang",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    },
+    "perak": {
+      "code": "perak",
+      "name": "Perak",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    },
+    "perlis": {
+      "code": "perlis",
+      "name": "Perlis",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    },
+    "putrajaya": {
+      "code": "putrajaya",
+      "name": "Putrajaya",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    },
+    "sabah": {
+      "code": "sabah",
+      "name": "Sabah",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    },
+    "sarawak": {
+      "code": "sarawak",
+      "name": "Sarawak",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    },
+    "selangor": {
+      "code": "selangor",
+      "name": "Selangor",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    },
+    "terengganu": {
+      "code": "terengganu",
+      "name": "Terengganu",
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
+      "total_years_available": 4,
+      "year_range": "2024-2027"
+    }
+  }
 }

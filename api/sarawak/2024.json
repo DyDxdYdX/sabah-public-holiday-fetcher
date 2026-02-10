@@ -36,12 +36,16 @@
     "holiday_name": "Wesak Day"
   },
   {
-    "date": "May 30",
-    "holiday_name": "Pesta Kaamatan"
+    "date": "Jun 01",
+    "holiday_name": "Gawai Dayak"
   },
   {
-    "date": "May 31",
-    "holiday_name": "Pesta Kaamatan"
+    "date": "Jun 02",
+    "holiday_name": "Gawai Dayak"
+  },
+  {
+    "date": "Jun 03",
+    "holiday_name": "Gawai Dayak"
   },
   {
     "date": "Jun 03",
@@ -60,6 +64,10 @@
     "holiday_name": "Awal Muharram"
   },
   {
+    "date": "Jul 22",
+    "holiday_name": "Sarawak Day"
+  },
+  {
     "date": "Aug 31",
     "holiday_name": "National Day"
   },
@@ -72,16 +80,8 @@
     "holiday_name": "Malaysia Day"
   },
   {
-    "date": "Oct 05",
-    "holiday_name": "Birthday of the Governor of Sabah"
-  },
-  {
-    "date": "Oct 31",
-    "holiday_name": "Deepavali"
-  },
-  {
-    "date": "Dec 24",
-    "holiday_name": "Christmas Eve"
+    "date": "Oct 12",
+    "holiday_name": "Birthday of the Governor of Sarawak"
   },
   {
     "date": "Dec 25",
