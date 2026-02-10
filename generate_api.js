@@ -1,10 +1,10 @@
-const fs = require('fs');
-const path = require('path');
-const axios = require('axios');
-const cheerio = require('cheerio');
+const fs = require("fs");
+const path = require("path");
+const axios = require("axios");
+const cheerio = require("cheerio");
 
 // Create api directory if it doesn't exist
-const apiDir = path.join(__dirname, 'api');
+const apiDir = path.join(__dirname, "api");
 if (!fs.existsSync(apiDir)) {
   fs.mkdirSync(apiDir);
 }
@@ -12,44 +12,76 @@ if (!fs.existsSync(apiDir)) {
 // Years to pre-generate (adjust as needed)
 const currentYear = new Date().getFullYear();
 const startYear = currentYear - 2; // 2 years in the past
-const endYear = currentYear + 2;   // 2 years in the future
+const endYear = currentYear + 2; // 2 years in the future
 
-async function scrapeHolidays(year) {
-  console.log(`Scraping holidays for ${year}...`);
+const states = [
+  { code: "johor", name: "Johor" },
+  { code: "kedah", name: "Kedah" },
+  { code: "kelantan", name: "Kelantan" },
+  { code: "kuala-lumpur", name: "Kuala Lumpur" },
+  { code: "labuan", name: "Labuan" },
+  { code: "melaka", name: "Melaka" },
+  { code: "negeri-sembilan", name: "Negeri Sembilan" },
+  { code: "pahang", name: "Pahang" },
+  { code: "penang", name: "Penang" },
+  { code: "perak", name: "Perak" },
+  { code: "perlis", name: "Perlis" },
+  { code: "putrajaya", name: "Putrajaya" },
+  { code: "sabah", name: "Sabah" },
+  { code: "sarawak", name: "Sarawak" },
+  { code: "selangor", name: "Selangor" },
+  { code: "terengganu", name: "Terengganu" },
+];
+
+function ensureDir(dirPath) {
+  if (!fs.existsSync(dirPath)) {
+    fs.mkdirSync(dirPath, { recursive: true });
+  }
+}
+
+async function scrapeHolidays(state, year) {
+  console.log(`Scraping holidays for ${state.name} (${year})...`);
 
   // Maximum number of retries
-  const maxRetries = 3;
+  const maxRetries = 1;
   let retries = 0;
 
   while (retries < maxRetries) {
     try {
-      const url = `https://www.officeholidays.com/countries/malaysia/sabah/${year}`;
+      const url = `https://www.officeholidays.com/countries/malaysia/${state.code}/${year}`;
       const response = await axios.get(url, {
         headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+          "User-Agent":
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
         },
-        timeout: 15000
+        timeout: 15000,
       });
 
       const $ = cheerio.load(response.data);
-      const holidayTable = $('table.country-table');
+      const holidayTable = $("table.country-table");
 
       if (holidayTable.length === 0) {
-        throw new Error(`Could not find holiday table for year ${year}`);
+        throw new Error(
+          `Could not find holiday table for ${state.name} (${year})`,
+        );
       }
 
       const holidays = [];
 
-      holidayTable.find('tr').each((_, row) => {
-      const cells = $(row).find('td');
-    
-      if (cells.length >= 4) {
+      holidayTable.find("tr").each((_, row) => {
+        const cells = $(row).find("td");
+
+        if (cells.length >= 4) {
           const type = $(cells[3]).text().trim().toLowerCase(); // 'national holiday', 'regional holiday', etc.
           const date = $(cells[1]).text().trim();
           const holidayName = $(cells[2]).text().trim();
-      
+
           // Only include National Holiday and Regional Holiday
-          if ((type === 'national holiday' || type === 'regional holiday') && date && holidayName) {
+          if (
+            (type === "national holiday" || type === "regional holiday") &&
+            date &&
+            holidayName
+          ) {
             holidays.push({
               date,
               holiday_name: holidayName,
@@ -58,23 +90,27 @@ async function scrapeHolidays(year) {
         }
       });
 
-
       if (holidays.length === 0) {
-        throw new Error(`No holidays found for year ${year}`);
+        throw new Error(`No holidays found for ${state.name} (${year})`);
       }
 
       return holidays;
     } catch (error) {
       retries++;
-      console.error(`Error scraping ${year} (attempt ${retries}/${maxRetries}):`, error.message);
+      console.error(
+        `Error scraping ${state.name} (${year}) (attempt ${retries}/${maxRetries}):`,
+        error.message,
+      );
 
       if (retries < maxRetries) {
         // Wait before retrying (exponential backoff)
         const waitTime = 2000 * Math.pow(2, retries - 1);
         console.log(`Waiting ${waitTime}ms before retrying...`);
-        await new Promise(resolve => setTimeout(resolve, waitTime));
+        await new Promise((resolve) => setTimeout(resolve, waitTime));
       } else {
-        console.error(`Failed to scrape ${year} after ${maxRetries} attempts`);
+        console.error(
+          `Failed to scrape ${state.name} (${year}) after ${maxRetries} attempts`,
+        );
         return null;
       }
     }
@@ -84,64 +120,101 @@ async function scrapeHolidays(year) {
 }
 
 async function generateApiFiles() {
-  // Track successful years
-  const successfulYears = [];
-  const failedYears = [];
+  const statesMetadata = {};
 
-  // Generate individual year files
-  for (let year = startYear; year <= endYear; year++) {
-    try {
-      const holidays = await scrapeHolidays(year);
+  fs.writeFileSync(
+    path.join(apiDir, "states.json"),
+    JSON.stringify(states, null, 2),
+  );
+  console.log(`Generated api/states.json with ${states.length} states`);
 
-      if (holidays && holidays.length > 0) {
-        fs.writeFileSync(
-          path.join(apiDir, `${year}.json`),
-          JSON.stringify(holidays, null, 2)
+  for (const state of states) {
+    const stateDir = path.join(apiDir, state.code);
+    ensureDir(stateDir);
+
+    const successfulYears = [];
+    const failedYears = [];
+
+    for (let year = startYear; year <= endYear; year++) {
+      try {
+        const holidays = await scrapeHolidays(state, year);
+
+        if (holidays && holidays.length > 0) {
+          fs.writeFileSync(
+            path.join(stateDir, `${year}.json`),
+            JSON.stringify(holidays, null, 2),
+          );
+          console.log(
+            `Generated api/${state.code}/${year}.json with ${holidays.length} holidays`,
+          );
+          successfulYears.push(year);
+
+          // Backward compatibility for existing Sabah endpoint: /api/{year}.json
+          if (state.code === "sabah") {
+            fs.writeFileSync(
+              path.join(apiDir, `${year}.json`),
+              JSON.stringify(holidays, null, 2),
+            );
+            console.log(
+              `Generated api/${year}.json (Sabah compatibility endpoint)`,
+            );
+          }
+        } else {
+          console.log(`Failed to generate data for ${state.name} (${year})`);
+          failedYears.push(year);
+        }
+      } catch (error) {
+        console.error(
+          `Error generating file for ${state.name} (${year}):`,
+          error.message,
         );
-        console.log(`Generated api/${year}.json with ${holidays.length} holidays`);
-        successfulYears.push(year);
-      } else {
-        console.log(`Failed to generate data for ${year}`);
         failedYears.push(year);
       }
-    } catch (error) {
-      console.error(`Error generating file for ${year}:`, error.message);
-      failedYears.push(year);
     }
-  }
 
-  // Generate years.json (list of available years)
-  try {
-    // Sort years in ascending order
     successfulYears.sort((a, b) => a - b);
+    failedYears.sort((a, b) => a - b);
 
-    fs.writeFileSync(
-      path.join(apiDir, 'years.json'),
-      JSON.stringify(successfulYears, null, 2)
-    );
-    console.log(`Generated api/years.json with ${successfulYears.length} years`);
-
-    // Generate a summary file with metadata
-    const metadata = {
-      last_updated: new Date().toISOString(),
+    statesMetadata[state.code] = {
+      code: state.code,
+      name: state.name,
       available_years: successfulYears,
       failed_years: failedYears,
       total_years_available: successfulYears.length,
-      year_range: `${Math.min(...successfulYears)}-${Math.max(...successfulYears)}`
+      year_range:
+        successfulYears.length > 0
+          ? `${Math.min(...successfulYears)}-${Math.max(...successfulYears)}`
+          : null,
+    };
+  }
+
+  try {
+    // Keep existing years endpoint as Sabah years for compatibility
+    const sabahYears = statesMetadata.sabah
+      ? statesMetadata.sabah.available_years
+      : [];
+    fs.writeFileSync(
+      path.join(apiDir, "years.json"),
+      JSON.stringify(sabahYears, null, 2),
+    );
+    console.log(`Generated api/years.json (Sabah compatibility years)`);
+
+    const metadata = {
+      last_updated: new Date().toISOString(),
+      state_count: states.length,
+      default_state: "sabah",
+      states,
+      states_metadata: statesMetadata,
     };
 
     fs.writeFileSync(
-      path.join(apiDir, 'metadata.json'),
-      JSON.stringify(metadata, null, 2)
+      path.join(apiDir, "metadata.json"),
+      JSON.stringify(metadata, null, 2),
     );
-    console.log(`Generated api/metadata.json with API information`);
-
-    if (failedYears.length > 0) {
-      console.warn(`Warning: Failed to generate data for years: ${failedYears.join(', ')}`);
-    }
+    console.log("Generated api/metadata.json with state-aware API information");
   } catch (error) {
-    console.error('Error generating metadata files:', error.message);
-    throw error; // Re-throw to indicate failure
+    console.error("Error generating API files:", error.message);
+    throw error;
   }
 }
 

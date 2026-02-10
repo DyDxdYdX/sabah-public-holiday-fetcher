@@ -3,7 +3,7 @@ name: Generate API Data
 on:
   schedule:
     # Run once a year on January 1st at 00:00 UTC
-    - cron: '0 0 1 1 *'
+    - cron: "0 0 1 1 *"
     # You can add more schedules if needed, e.g., weekly on Sunday
     # - cron: '0 0 * * 0'  # Weekly on Sunday at midnight UTC
   workflow_dispatch: # Allow manual triggering
@@ -24,13 +24,16 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install dependencies
         run: npm install
 
       - name: Generate API data
         run: npm run generate
+
+      - name: Format code
+        run: npm run format
 
       - name: Commit and push changes
         run: |
