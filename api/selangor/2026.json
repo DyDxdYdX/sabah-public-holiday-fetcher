@@ -1,106 +1,127 @@
 [
   {
     "date": "Jan 01",
+    "day_of_week": "Thursday",
     "holiday_name": "New Year's Day",
     "is_gazetted": false
   },
   {
     "date": "Feb 01",
+    "day_of_week": "Sunday",
     "holiday_name": "Thaipusam",
     "is_gazetted": false
   },
   {
     "date": "Feb 02",
+    "day_of_week": "Monday",
     "holiday_name": "Thaipusam (in lieu)",
     "is_gazetted": false
   },
   {
     "date": "Feb 17",
+    "day_of_week": "Tuesday",
     "holiday_name": "Chinese New Year",
     "is_gazetted": false
   },
   {
     "date": "Feb 18",
+    "day_of_week": "Wednesday",
     "holiday_name": "Chinese New Year Holiday",
     "is_gazetted": false
   },
   {
     "date": "Mar 07",
+    "day_of_week": "Saturday",
     "holiday_name": "Nuzul Al-Quran Day",
     "is_gazetted": false
   },
   {
     "date": "Mar 21",
+    "day_of_week": "Saturday",
     "holiday_name": "Hari Raya Aidilfitri",
     "is_gazetted": false
   },
   {
     "date": "Mar 22",
+    "day_of_week": "Sunday",
     "holiday_name": "Hari Raya Aidilfitri Holiday",
     "is_gazetted": false
   },
   {
     "date": "Mar 23",
+    "day_of_week": "Monday",
     "holiday_name": "Hari Raya Aidilfitri Holiday",
     "is_gazetted": false
   },
   {
     "date": "May 01",
+    "day_of_week": "Friday",
     "holiday_name": "Labour Day",
     "is_gazetted": true
   },
   {
     "date": "May 27",
+    "day_of_week": "Wednesday",
     "holiday_name": "Hari Raya Haji",
     "is_gazetted": false
   },
   {
     "date": "May 31",
+    "day_of_week": "Sunday",
     "holiday_name": "Wesak Day",
     "is_gazetted": false
   },
   {
     "date": "Jun 01",
+    "day_of_week": "Monday",
     "holiday_name": "Birthday of SPB Yang di Pertuan Agong",
     "is_gazetted": true
   },
   {
     "date": "Jun 17",
+    "day_of_week": "Wednesday",
     "holiday_name": "Awal Muharram",
     "is_gazetted": false
   },
   {
     "date": "Aug 25",
+    "day_of_week": "Tuesday",
     "holiday_name": "Maulidur Rasul",
     "is_gazetted": false
   },
   {
     "date": "Aug 31",
+    "day_of_week": "Monday",
     "holiday_name": "National Day",
     "is_gazetted": true
   },
   {
     "date": "Sep 16",
+    "day_of_week": "Wednesday",
     "holiday_name": "Malaysia Day",
     "is_gazetted": true
   },
   {
     "date": "Nov 08",
+    "day_of_week": "Sunday",
     "holiday_name": "Deepavali",
     "is_gazetted": false
   },
   {
     "date": "Nov 09",
+    "day_of_week": "Monday",
     "holiday_name": "Deepavali (in lieu)",
     "is_gazetted": false
   },
   {
     "date": "Dec 11",
+    "day_of_week": "Friday",
     "holiday_name": "Birthday of The Sultan of Selangor",
     "is_gazetted": true
   },
   {
     "date": "Dec 25",
+    "day_of_week": "Friday",
     "holiday_name": "Christmas Day",
     "is_gazetted": false
   }

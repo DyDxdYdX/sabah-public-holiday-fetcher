@@ -1,111 +1,133 @@
 [
   {
     "date": "Jan 01",
+    "day_of_week": "Monday",
     "holiday_name": "New Year's Day",
     "is_gazetted": false
   },
   {
     "date": "Feb 10",
+    "day_of_week": "Saturday",
     "holiday_name": "Chinese New Year",
     "is_gazetted": false
   },
   {
     "date": "Feb 11",
+    "day_of_week": "Sunday",
     "holiday_name": "Chinese New Year Holiday",
     "is_gazetted": false
   },
   {
     "date": "Feb 12",
+    "day_of_week": "Monday",
     "holiday_name": "Chinese New Year Holiday",
     "is_gazetted": false
   },
   {
     "date": "Mar 29",
+    "day_of_week": "Friday",
     "holiday_name": "Good Friday",
     "is_gazetted": false
   },
   {
     "date": "Apr 10",
+    "day_of_week": "Wednesday",
     "holiday_name": "Hari Raya Aidilfitri",
     "is_gazetted": false
   },
   {
     "date": "Apr 11",
+    "day_of_week": "Thursday",
     "holiday_name": "Hari Raya Aidilfitri",
     "is_gazetted": false
   },
   {
     "date": "May 01",
+    "day_of_week": "Wednesday",
     "holiday_name": "Labour Day",
     "is_gazetted": true
   },
   {
     "date": "May 22",
+    "day_of_week": "Wednesday",
     "holiday_name": "Wesak Day",
     "is_gazetted": false
   },
   {
     "date": "May 30",
+    "day_of_week": "Thursday",
     "holiday_name": "Pesta Kaamatan",
     "is_gazetted": false
   },
   {
     "date": "May 31",
+    "day_of_week": "Friday",
     "holiday_name": "Pesta Kaamatan",
     "is_gazetted": false
   },
   {
     "date": "Jun 03",
+    "day_of_week": "Monday",
     "holiday_name": "Birthday of SPB Yang di Pertuan Agong",
     "is_gazetted": true
   },
   {
     "date": "Jun 17",
+    "day_of_week": "Monday",
     "holiday_name": "Hari Raya Haji",
     "is_gazetted": false
   },
   {
     "date": "Jul 07",
+    "day_of_week": "Sunday",
     "holiday_name": "Awal Muharram",
     "is_gazetted": false
   },
   {
     "date": "Jul 08",
+    "day_of_week": "Monday",
     "holiday_name": "Awal Muharram",
     "is_gazetted": false
   },
   {
     "date": "Aug 31",
+    "day_of_week": "Saturday",
     "holiday_name": "National Day",
     "is_gazetted": true
   },
   {
     "date": "Sep 16",
+    "day_of_week": "Monday",
     "holiday_name": "Maulidur Rasul",
     "is_gazetted": false
   },
   {
     "date": "Sep 16",
+    "day_of_week": "Monday",
     "holiday_name": "Malaysia Day",
     "is_gazetted": true
   },
   {
     "date": "Oct 05",
+    "day_of_week": "Saturday",
     "holiday_name": "Birthday of the Governor of Sabah",
     "is_gazetted": true
   },
   {
     "date": "Oct 31",
+    "day_of_week": "Thursday",
     "holiday_name": "Deepavali",
     "is_gazetted": false
   },
   {
     "date": "Dec 24",
+    "day_of_week": "Tuesday",
     "holiday_name": "Christmas Eve",
     "is_gazetted": false
   },
   {
     "date": "Dec 25",
+    "day_of_week": "Wednesday",
     "holiday_name": "Christmas Day",
     "is_gazetted": false
   }
