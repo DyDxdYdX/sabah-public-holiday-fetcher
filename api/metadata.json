@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-10T08:00:10.848Z",
+  "last_updated": "2026-03-10T08:07:22.911Z",
   "state_count": 16,
   "default_state": "sabah",
   "states": [
@@ -72,240 +72,128 @@
     "johor": {
       "code": "johor",
       "name": "Johor",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     },
     "kedah": {
       "code": "kedah",
       "name": "Kedah",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     },
     "kelantan": {
       "code": "kelantan",
       "name": "Kelantan",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     },
     "kuala-lumpur": {
       "code": "kuala-lumpur",
       "name": "Kuala Lumpur",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     },
     "labuan": {
       "code": "labuan",
       "name": "Labuan",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     },
     "melaka": {
       "code": "melaka",
       "name": "Melaka",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     },
     "negeri-sembilan": {
       "code": "negeri-sembilan",
       "name": "Negeri Sembilan",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     },
     "pahang": {
       "code": "pahang",
       "name": "Pahang",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     },
     "penang": {
       "code": "penang",
       "name": "Penang",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     },
     "perak": {
       "code": "perak",
       "name": "Perak",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     },
     "perlis": {
       "code": "perlis",
       "name": "Perlis",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     },
     "putrajaya": {
       "code": "putrajaya",
       "name": "Putrajaya",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     },
     "sabah": {
       "code": "sabah",
       "name": "Sabah",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     },
     "sarawak": {
       "code": "sarawak",
       "name": "Sarawak",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     },
     "selangor": {
       "code": "selangor",
       "name": "Selangor",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     },
     "terengganu": {
       "code": "terengganu",
       "name": "Terengganu",
-      "available_years": [
-        2024,
-        2025,
-        2026,
-        2027
-      ],
-      "failed_years": [
-        2028
-      ],
+      "available_years": [2024, 2025, 2026, 2027],
+      "failed_years": [2028],
       "total_years_available": 4,
       "year_range": "2024-2027"
     }
