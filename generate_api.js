@@ -90,6 +90,7 @@ async function scrapeHolidays(state, year) {
 
         if (cells.length >= 4) {
           const type = $(cells[3]).text().trim().toLowerCase(); // 'national holiday', 'regional holiday', etc.
+          const dayOfWeek = $(cells[0]).text().trim();
           const date = $(cells[1]).text().trim();
           const holidayName = $(cells[2]).text().trim();
 
@@ -101,6 +102,7 @@ async function scrapeHolidays(state, year) {
           ) {
             holidays.push({
               date,
+              day_of_week: dayOfWeek,
               holiday_name: holidayName,
               is_gazetted: isMandatoryGazetted(holidayName),
             });
