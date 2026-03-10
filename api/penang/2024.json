@@ -1,86 +1,107 @@
 [
   {
     "date": "Jan 01",
-    "holiday_name": "New Year's Day"
+    "holiday_name": "New Year's Day",
+    "is_gazetted": false
   },
   {
     "date": "Jan 25",
-    "holiday_name": "Thaipusam"
+    "holiday_name": "Thaipusam",
+    "is_gazetted": false
   },
   {
     "date": "Feb 10",
-    "holiday_name": "Chinese New Year"
+    "holiday_name": "Chinese New Year",
+    "is_gazetted": false
   },
   {
     "date": "Feb 11",
-    "holiday_name": "Chinese New Year Holiday"
+    "holiday_name": "Chinese New Year Holiday",
+    "is_gazetted": false
   },
   {
     "date": "Feb 12",
-    "holiday_name": "Chinese New Year Holiday"
+    "holiday_name": "Chinese New Year Holiday",
+    "is_gazetted": false
   },
   {
     "date": "Mar 28",
-    "holiday_name": "Nuzul Al-Quran Day"
+    "holiday_name": "Nuzul Al-Quran Day",
+    "is_gazetted": false
   },
   {
     "date": "Apr 10",
-    "holiday_name": "Hari Raya Aidilfitri"
+    "holiday_name": "Hari Raya Aidilfitri",
+    "is_gazetted": false
   },
   {
     "date": "Apr 11",
-    "holiday_name": "Hari Raya Aidilfitri"
+    "holiday_name": "Hari Raya Aidilfitri",
+    "is_gazetted": false
   },
   {
     "date": "May 01",
-    "holiday_name": "Labour Day"
+    "holiday_name": "Labour Day",
+    "is_gazetted": true
   },
   {
     "date": "May 22",
-    "holiday_name": "Wesak Day"
+    "holiday_name": "Wesak Day",
+    "is_gazetted": false
   },
   {
     "date": "Jun 03",
-    "holiday_name": "Birthday of SPB Yang di Pertuan Agong"
+    "holiday_name": "Birthday of SPB Yang di Pertuan Agong",
+    "is_gazetted": true
   },
   {
     "date": "Jun 17",
-    "holiday_name": "Hari Raya Haji"
+    "holiday_name": "Hari Raya Haji",
+    "is_gazetted": false
   },
   {
     "date": "Jul 07",
-    "holiday_name": "Awal Muharram"
+    "holiday_name": "Awal Muharram",
+    "is_gazetted": false
   },
   {
     "date": "Jul 07",
-    "holiday_name": "George Town Heritage Day"
+    "holiday_name": "George Town Heritage Day",
+    "is_gazetted": false
   },
   {
     "date": "Jul 08",
-    "holiday_name": "Awal Muharram"
+    "holiday_name": "Awal Muharram",
+    "is_gazetted": false
   },
   {
     "date": "Jul 13",
-    "holiday_name": "Birthday of the Governor"
+    "holiday_name": "Birthday of the Governor",
+    "is_gazetted": true
   },
   {
     "date": "Aug 31",
-    "holiday_name": "National Day"
+    "holiday_name": "National Day",
+    "is_gazetted": true
   },
   {
     "date": "Sep 16",
-    "holiday_name": "Maulidur Rasul"
+    "holiday_name": "Maulidur Rasul",
+    "is_gazetted": false
   },
   {
     "date": "Sep 16",
-    "holiday_name": "Malaysia Day"
+    "holiday_name": "Malaysia Day",
+    "is_gazetted": true
   },
   {
     "date": "Oct 31",
-    "holiday_name": "Deepavali"
+    "holiday_name": "Deepavali",
+    "is_gazetted": false
   },
   {
     "date": "Dec 25",
-    "holiday_name": "Christmas Day"
+    "holiday_name": "Christmas Day",
+    "is_gazetted": false
   }
 ]

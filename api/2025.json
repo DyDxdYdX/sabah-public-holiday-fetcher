@@ -1,98 +1,122 @@
 [
   {
     "date": "Jan 01",
-    "holiday_name": "New Year's Day"
+    "holiday_name": "New Year's Day",
+    "is_gazetted": false
   },
   {
     "date": "Jan 29",
-    "holiday_name": "Chinese New Year"
+    "holiday_name": "Chinese New Year",
+    "is_gazetted": false
   },
   {
     "date": "Jan 30",
-    "holiday_name": "Chinese New Year"
+    "holiday_name": "Chinese New Year",
+    "is_gazetted": false
   },
   {
     "date": "Mar 30",
-    "holiday_name": "Birthday of the Governor of Sabah"
+    "holiday_name": "Birthday of the Governor of Sabah",
+    "is_gazetted": true
   },
   {
     "date": "Mar 31",
-    "holiday_name": "Hari Raya Aidilfitri"
+    "holiday_name": "Hari Raya Aidilfitri",
+    "is_gazetted": false
   },
   {
     "date": "Apr 01",
-    "holiday_name": "Hari Raya Aidilfitri Holiday"
+    "holiday_name": "Hari Raya Aidilfitri Holiday",
+    "is_gazetted": false
   },
   {
     "date": "Apr 02",
-    "holiday_name": "Birthday of the Governor of Sabah (in lieu)"
+    "holiday_name": "Birthday of the Governor of Sabah (in lieu)",
+    "is_gazetted": true
   },
   {
     "date": "Apr 18",
-    "holiday_name": "Good Friday"
+    "holiday_name": "Good Friday",
+    "is_gazetted": false
   },
   {
     "date": "May 01",
-    "holiday_name": "Labour Day"
+    "holiday_name": "Labour Day",
+    "is_gazetted": true
   },
   {
     "date": "May 12",
-    "holiday_name": "Wesak Day"
+    "holiday_name": "Wesak Day",
+    "is_gazetted": false
   },
   {
     "date": "May 30",
-    "holiday_name": "Pesta Kaamatan"
+    "holiday_name": "Pesta Kaamatan",
+    "is_gazetted": false
   },
   {
     "date": "May 31",
-    "holiday_name": "Pesta Kaamatan"
+    "holiday_name": "Pesta Kaamatan",
+    "is_gazetted": false
   },
   {
     "date": "Jun 02",
-    "holiday_name": "Birthday of SPB Yang di Pertuan Agong"
+    "holiday_name": "Birthday of SPB Yang di Pertuan Agong",
+    "is_gazetted": true
   },
   {
     "date": "Jun 07",
-    "holiday_name": "Hari Raya Haji"
+    "holiday_name": "Hari Raya Haji",
+    "is_gazetted": false
   },
   {
     "date": "Jun 27",
-    "holiday_name": "Awal Muharram"
+    "holiday_name": "Awal Muharram",
+    "is_gazetted": false
   },
   {
     "date": "Aug 31",
-    "holiday_name": "National Day"
+    "holiday_name": "National Day",
+    "is_gazetted": true
   },
   {
     "date": "Sep 01",
-    "holiday_name": "National Day (in lieu)"
+    "holiday_name": "National Day (in lieu)",
+    "is_gazetted": true
   },
   {
     "date": "Sep 05",
-    "holiday_name": "Maulidur Rasul"
+    "holiday_name": "Maulidur Rasul",
+    "is_gazetted": false
   },
   {
     "date": "Sep 15",
-    "holiday_name": "Malaysia Day Holiday"
+    "holiday_name": "Malaysia Day Holiday",
+    "is_gazetted": true
   },
   {
     "date": "Sep 16",
-    "holiday_name": "Malaysia Day"
+    "holiday_name": "Malaysia Day",
+    "is_gazetted": true
   },
   {
     "date": "Oct 20",
-    "holiday_name": "Deepavali"
+    "holiday_name": "Deepavali",
+    "is_gazetted": false
   },
   {
     "date": "Nov 29",
-    "holiday_name": "Polling Day"
+    "holiday_name": "Polling Day",
+    "is_gazetted": false
   },
   {
     "date": "Dec 24",
-    "holiday_name": "Christmas Eve"
+    "holiday_name": "Christmas Eve",
+    "is_gazetted": false
   },
   {
     "date": "Dec 25",
-    "holiday_name": "Christmas Day"
+    "holiday_name": "Christmas Day",
+    "is_gazetted": false
   }
 ]

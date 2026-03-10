@@ -1,70 +1,87 @@
 [
   {
     "date": "Feb 06",
-    "holiday_name": "Chinese New Year"
+    "holiday_name": "Chinese New Year",
+    "is_gazetted": false
   },
   {
     "date": "Feb 25",
-    "holiday_name": "Nuzul Al-Quran Day"
+    "holiday_name": "Nuzul Al-Quran Day",
+    "is_gazetted": false
   },
   {
     "date": "Mar 04",
-    "holiday_name": "Anniversary of Installation of the Sultan"
+    "holiday_name": "Anniversary of Installation of the Sultan",
+    "is_gazetted": true
   },
   {
     "date": "Mar 09",
-    "holiday_name": "Hari Raya Aidilfitri"
+    "holiday_name": "Hari Raya Aidilfitri",
+    "is_gazetted": false
   },
   {
     "date": "Mar 10",
-    "holiday_name": "Hari Raya Aidilfitri Holiday"
+    "holiday_name": "Hari Raya Aidilfitri Holiday",
+    "is_gazetted": false
   },
   {
     "date": "Apr 26",
-    "holiday_name": "Birthday of the Sultan of Terengganu"
+    "holiday_name": "Birthday of the Sultan of Terengganu",
+    "is_gazetted": true
   },
   {
     "date": "May 01",
-    "holiday_name": "Labour Day"
+    "holiday_name": "Labour Day",
+    "is_gazetted": true
   },
   {
     "date": "May 16",
-    "holiday_name": "Hari Raya Haji"
+    "holiday_name": "Hari Raya Haji",
+    "is_gazetted": false
   },
   {
     "date": "May 16",
-    "holiday_name": "Hari Raya Haji Holiday"
+    "holiday_name": "Hari Raya Haji Holiday",
+    "is_gazetted": false
   },
   {
     "date": "May 20",
-    "holiday_name": "Wesak Day"
+    "holiday_name": "Wesak Day",
+    "is_gazetted": false
   },
   {
     "date": "Jun 06",
-    "holiday_name": "Awal Muharram"
+    "holiday_name": "Awal Muharram",
+    "is_gazetted": false
   },
   {
     "date": "Jun 07",
-    "holiday_name": "Birthday of SPB Yang di Pertuan Agong"
+    "holiday_name": "Birthday of SPB Yang di Pertuan Agong",
+    "is_gazetted": true
   },
   {
     "date": "Aug 15",
-    "holiday_name": "Maulidur Rasul"
+    "holiday_name": "Maulidur Rasul",
+    "is_gazetted": false
   },
   {
     "date": "Aug 31",
-    "holiday_name": "National Day"
+    "holiday_name": "National Day",
+    "is_gazetted": true
   },
   {
     "date": "Sep 16",
-    "holiday_name": "Malaysia Day"
+    "holiday_name": "Malaysia Day",
+    "is_gazetted": true
   },
   {
     "date": "Oct 29",
-    "holiday_name": "Deepavali"
+    "holiday_name": "Deepavali",
+    "is_gazetted": false
   },
   {
     "date": "Dec 25",
-    "holiday_name": "Christmas Day"
+    "holiday_name": "Christmas Day",
+    "is_gazetted": false
   }
 ]

@@ -39,6 +39,23 @@ function ensureDir(dirPath) {
   }
 }
 
+function isMandatoryGazetted(holidayName) {
+  const name = holidayName.toLowerCase();
+  return (
+    name.includes("national day") ||
+    name.includes("labour day") ||
+    name.includes("workers") ||
+    name.includes("malaysia day") ||
+    name.includes("agong") ||
+    name.includes("king's birthday") ||
+    name.includes("federal territory day") ||
+    name.includes("governor") ||
+    name.includes("sultan") ||
+    name.includes("raja") ||
+    name.includes("yang di-pertuan besar")
+  );
+}
+
 async function scrapeHolidays(state, year) {
   console.log(`Scraping holidays for ${state.name} (${year})...`);
 
@@ -85,6 +102,7 @@ async function scrapeHolidays(state, year) {
             holidays.push({
               date,
               holiday_name: holidayName,
+              is_gazetted: isMandatoryGazetted(holidayName),
             });
           }
         }
