@@ -36,6 +36,12 @@
     "is_gazetted": false
   },
   {
+    "date": "Mar 30",
+    "day_of_week": "Monday",
+    "holiday_name": "Birthday of the Governor of Sabah",
+    "is_gazetted": true
+  },
+  {
     "date": "Apr 03",
     "day_of_week": "Friday",
     "holiday_name": "Good Friday",
@@ -58,12 +64,6 @@
     "day_of_week": "Saturday",
     "holiday_name": "Pesta Kaamatan",
     "is_gazetted": false
-  },
-  {
-    "date": "May 30",
-    "day_of_week": "Saturday",
-    "holiday_name": "Birthday of the Governor of Sabah",
-    "is_gazetted": true
   },
   {
     "date": "May 31",
