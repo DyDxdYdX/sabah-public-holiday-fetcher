@@ -3,144 +3,144 @@
     "date": "Jan 01",
     "day_of_week": "Wednesday",
     "holiday_name": "New Year's Day",
-    "is_gazetted": false
+    "is_mandatory": false
   },
   {
     "date": "Jan 29",
     "day_of_week": "Wednesday",
     "holiday_name": "Chinese New Year",
-    "is_gazetted": false
+    "is_mandatory": false
   },
   {
     "date": "Jan 30",
     "day_of_week": "Thursday",
     "holiday_name": "Chinese New Year",
-    "is_gazetted": false
+    "is_mandatory": false
   },
   {
     "date": "Mar 30",
     "day_of_week": "Sunday",
     "holiday_name": "Birthday of the Governor of Sabah",
-    "is_gazetted": true
+    "is_mandatory": true
   },
   {
     "date": "Mar 31",
     "day_of_week": "Monday",
     "holiday_name": "Hari Raya Aidilfitri",
-    "is_gazetted": false
+    "is_mandatory": false
   },
   {
     "date": "Apr 01",
     "day_of_week": "Tuesday",
     "holiday_name": "Hari Raya Aidilfitri Holiday",
-    "is_gazetted": false
+    "is_mandatory": false
   },
   {
     "date": "Apr 02",
     "day_of_week": "Wednesday",
     "holiday_name": "Birthday of the Governor of Sabah (in lieu)",
-    "is_gazetted": true
+    "is_mandatory": true
   },
   {
     "date": "Apr 18",
     "day_of_week": "Friday",
     "holiday_name": "Good Friday",
-    "is_gazetted": false
+    "is_mandatory": false
   },
   {
     "date": "May 01",
     "day_of_week": "Thursday",
     "holiday_name": "Labour Day",
-    "is_gazetted": true
+    "is_mandatory": true
   },
   {
     "date": "May 12",
     "day_of_week": "Monday",
     "holiday_name": "Wesak Day",
-    "is_gazetted": false
+    "is_mandatory": false
   },
   {
     "date": "May 30",
     "day_of_week": "Friday",
     "holiday_name": "Pesta Kaamatan",
-    "is_gazetted": false
+    "is_mandatory": false
   },
   {
     "date": "May 31",
     "day_of_week": "Saturday",
     "holiday_name": "Pesta Kaamatan",
-    "is_gazetted": false
+    "is_mandatory": false
   },
   {
     "date": "Jun 02",
     "day_of_week": "Monday",
     "holiday_name": "Birthday of SPB Yang di Pertuan Agong",
-    "is_gazetted": true
+    "is_mandatory": true
   },
   {
     "date": "Jun 07",
     "day_of_week": "Saturday",
     "holiday_name": "Hari Raya Haji",
-    "is_gazetted": false
+    "is_mandatory": false
   },
   {
     "date": "Jun 27",
     "day_of_week": "Friday",
     "holiday_name": "Awal Muharram",
-    "is_gazetted": false
+    "is_mandatory": false
   },
   {
     "date": "Aug 31",
     "day_of_week": "Sunday",
     "holiday_name": "National Day",
-    "is_gazetted": true
+    "is_mandatory": true
   },
   {
     "date": "Sep 01",
     "day_of_week": "Monday",
     "holiday_name": "National Day (in lieu)",
-    "is_gazetted": true
+    "is_mandatory": true
   },
   {
     "date": "Sep 05",
     "day_of_week": "Friday",
     "holiday_name": "Maulidur Rasul",
-    "is_gazetted": false
+    "is_mandatory": false
   },
   {
     "date": "Sep 15",
     "day_of_week": "Monday",
     "holiday_name": "Malaysia Day Holiday",
-    "is_gazetted": true
+    "is_mandatory": true
   },
   {
     "date": "Sep 16",
     "day_of_week": "Tuesday",
     "holiday_name": "Malaysia Day",
-    "is_gazetted": true
+    "is_mandatory": true
   },
   {
     "date": "Oct 20",
     "day_of_week": "Monday",
     "holiday_name": "Deepavali",
-    "is_gazetted": false
+    "is_mandatory": false
   },
   {
     "date": "Nov 29",
     "day_of_week": "Saturday",
     "holiday_name": "Polling Day",
-    "is_gazetted": false
+    "is_mandatory": false
   },
   {
     "date": "Dec 24",
     "day_of_week": "Wednesday",
     "holiday_name": "Christmas Eve",
-    "is_gazetted": false
+    "is_mandatory": false
   },
   {
     "date": "Dec 25",
     "day_of_week": "Thursday",
     "holiday_name": "Christmas Day",
-    "is_gazetted": false
+    "is_mandatory": false
   }
 ]

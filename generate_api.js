@@ -104,7 +104,7 @@ async function scrapeHolidays(state, year) {
               date,
               day_of_week: dayOfWeek,
               holiday_name: holidayName,
-              is_gazetted: isMandatoryGazetted(holidayName),
+              is_mandatory: isMandatoryGazetted(holidayName),
             });
           }
         }

@@ -36,7 +36,7 @@ Each holiday object includes:
 - `date`: The date string (e.g., "Jan 01")
 - `day_of_week`: The day of the week (e.g., "Thursday")
 - `holiday_name`: The name of the holiday
-- `is_gazetted`: Boolean flag indicating if it's a mandatory gazetted holiday (e.g., National Day, Labour Day). *Note: Detection is based on keyword matching and reliability is not 100%.*
+- `is_mandatory`: Boolean flag indicating if it's a mandatory gazetted holiday (e.g., National Day, Labour Day). *Note: Detection is based on keyword matching and reliability is not 100%.*
 
 Backward-compatible Sabah endpoint:
 
