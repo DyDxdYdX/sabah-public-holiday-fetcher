@@ -30,8 +30,14 @@
     "is_mandatory": false
   },
   {
-    "date": "Mar 23",
-    "day_of_week": "Monday",
+    "date": "Mar 21",
+    "day_of_week": "Saturday",
+    "holiday_name": "Hari Raya Aidilfitri Holiday",
+    "is_mandatory": false
+  },
+  {
+    "date": "Mar 22",
+    "day_of_week": "Sunday",
     "holiday_name": "Hari Raya Aidilfitri Holiday",
     "is_mandatory": false
   },

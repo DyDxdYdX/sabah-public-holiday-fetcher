@@ -36,12 +36,6 @@
     "is_mandatory": false
   },
   {
-    "date": "Mar 30",
-    "day_of_week": "Tuesday",
-    "holiday_name": "Birthday of the Governor of Sabah",
-    "is_mandatory": true
-  },
-  {
     "date": "May 01",
     "day_of_week": "Saturday",
     "holiday_name": "Labour Day",
@@ -58,6 +52,12 @@
     "day_of_week": "Thursday",
     "holiday_name": "Wesak Day",
     "is_mandatory": false
+  },
+  {
+    "date": "May 29",
+    "day_of_week": "Saturday",
+    "holiday_name": "Birthday of the Governor of Sabah",
+    "is_mandatory": true
   },
   {
     "date": "May 30",

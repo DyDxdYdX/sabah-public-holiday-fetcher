@@ -24,8 +24,14 @@
     "is_mandatory": false
   },
   {
-    "date": "Mar 23",
-    "day_of_week": "Monday",
+    "date": "Mar 21",
+    "day_of_week": "Saturday",
+    "holiday_name": "Hari Raya Aidilfitri Holiday",
+    "is_mandatory": false
+  },
+  {
+    "date": "Mar 22",
+    "day_of_week": "Sunday",
     "holiday_name": "Hari Raya Aidilfitri Holiday",
     "is_mandatory": false
   },
@@ -34,12 +40,6 @@
     "day_of_week": "Monday",
     "holiday_name": "Hari Raya Aidilfitri Holiday",
     "is_mandatory": false
-  },
-  {
-    "date": "Mar 30",
-    "day_of_week": "Monday",
-    "holiday_name": "Birthday of the Governor of Sabah",
-    "is_mandatory": true
   },
   {
     "date": "Apr 03",
@@ -64,6 +64,12 @@
     "day_of_week": "Saturday",
     "holiday_name": "Pesta Kaamatan",
     "is_mandatory": false
+  },
+  {
+    "date": "May 30",
+    "day_of_week": "Saturday",
+    "holiday_name": "Birthday of the Governor of Sabah",
+    "is_mandatory": true
   },
   {
     "date": "May 31",
