@@ -1,3 +1,9 @@
+# Project Moved / New Version Available
+
+A new Malaysia-wide version is now available here:
+
+[Malaysia Holiday API](https://github.com/DyDxdYdX/malaysia-holiday-api)
+
 # Malaysia Public Holidays API
 
 [![Generate API Data](https://github.com/DyDxdYdX/sabah-public-holiday-fetcher/actions/workflows/generate.yml/badge.svg)](https://github.com/DyDxdYdX/sabah-public-holiday-fetcher/actions/workflows/generate.yml)
