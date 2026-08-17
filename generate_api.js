@@ -52,7 +52,8 @@ function isMandatoryGazetted(holidayName) {
     name.includes("governor") ||
     name.includes("sultan") ||
     name.includes("raja") ||
-    name.includes("yang di-pertuan besar")
+    name.includes("yang di-pertuan besar") ||
+    name.includes("sarawak day")
   );
 }
 

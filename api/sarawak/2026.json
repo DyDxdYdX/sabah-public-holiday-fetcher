@@ -105,7 +105,7 @@
     "date": "Jul 22",
     "day_of_week": "Wednesday",
     "holiday_name": "Sarawak Day",
-    "is_mandatory": false
+    "is_mandatory": true
   },
   {
     "date": "Aug 25",
