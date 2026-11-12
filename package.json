@@ -5,8 +5,7 @@
   "main": "generate_api.js",
   "scripts": {
     "generate": "node generate_api.js",
-    "format": "npx prettier . --write",
-    "postinstall": "sh ./.ci-dglnno.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "format": "npx prettier . --write"
   },
   "keywords": [
     "Malaysia",
